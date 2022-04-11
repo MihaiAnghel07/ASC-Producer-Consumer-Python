@@ -1,0 +1,38 @@
+Nume: Anghel Mihai-Gabriel
+Grupa 336CC
+
+
+
+Organizare
+Flow-ul este organizat astfel:
+ - producatorii obtin un id unic si incearca sa-si plaseze produsele in 
+   marketplace (se face in bucla)
+ - consumatorii obtin si ei un id unic pentru cosul lor de cumparaturi, urmand
+   ca apoi sa incerce sa isi puna in cos produsele dorite (se face in bucla) sau
+   sa le elimine pe cele nedorite
+   In final, se plaseaza comanda si se afiseaza produsele din lista returnata.
+In marketplace, am folosit 3 lock-uri pentru sincronizarea generarii de id-uri
+unice pentru consumatori/producatori si pentru adaugarea produselor in cos.
+Detaliile de implementare le-am notat in comentarii in cod.
+
+Consider ca tema este utila pentru ca m-a ajutat sa inteleg mai bine cum
+functioneaza sincronizarea, in special in python. In plus, mi-a placut pentru
+ca am mai exersat programarea in python.
+Implementarea nu este printre cele mai bune, pentru ca uneori pica testul 10,
+dar alta solutie nu am gasit.
+
+
+
+Implementare
+Nu am impelmentat partea de login.
+La partea de unittest, nu am reusit sa fac testarea din consola bash, dar am
+facut-o din IDE PyCharm. Ciudat este ca nu imi functioneaza add_to_cart asa
+cum ar trebui, desi testele trec. Am incercat sa gasesc problema, dar nu am 
+reusit. Aceeasi problema la remove_from_cart.
+
+
+
+Git
+https://github.com/MihaiAnghel07/ASC-Producer-Consumer-Python.git
+
+
